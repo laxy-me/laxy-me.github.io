@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Background sticky concurrent mark sweep GC freed"
+title: "Multidex导致Debug模式找不到Class"
 author: "talkeryang"
 meta: "Springfield"
 
