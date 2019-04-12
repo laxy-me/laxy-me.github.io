@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Android 6.0 CHANGE_NETWORK_STATE权限的bug引起的问题"
+title: "CHANGE_NETWORK_STATE权限问题"
 author: "talkeryang"
-meta: "Springfield"
+meta: "Springfield"  
 ---
 
 在查看崩溃日志中发现了较多的SecurityException报错，报错信息如下：
