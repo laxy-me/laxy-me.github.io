@@ -5,23 +5,23 @@ permalink: /blog/
 ---
 <!-- Slider Start -->
 <section id="global-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1>记录自己的点点滴滴</h1>
-          <p>遇到的小问题和学习笔记</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>记录自己的点点滴滴</h1>
+                    <p>遇到的小问题和学习笔记</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 {% for post in site.posts %}
 <div class="post-area">
-  <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
-  <p class="post-date">{{ post.date | date_to_long_string }}</p>
-  <p>
-    {{ post.content | strip_html | truncatewords: 50 }}
-  </p>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+    <p class="post-date">{{ post.date | date:"%Y-%m-%d" }}</p>
+    <p>
+        {{ post.content | strip_html | truncatewords: 50 }}
+    </p>
 </div>
 {% endfor %}
